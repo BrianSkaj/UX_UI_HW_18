@@ -1,37 +1,110 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>UX_UI_HW_17</title>
+        <title>UX_UI_HW_18</title>
         <link rel="stylesheet" href="css/style.css">
+        <style>
+            @font-face{
+                font-family: montserrat;
+                src: url(https://fonts.cdnfonts.com/css/montserrat);                
+            }
+        </style>
     </head>
     <body>
 <header class="navigation">
-    <div class="inline-block logo"><img src="images/logo h=80.png"></div>
-        <nav class="inline-block">
+    <div class="logo"><img src="images/logo h=80.png"></div>
+        <nav class="header">
             <ul>
-                <li class="inline-block">About Me</li>
-                <li class="inline-block">Blog</li>
-                <li class="inline-block">Contact Me</li>
-                <li class="inline-block">Portfolio</li>
+                <button>About Me</button>
+                <button>Blog</button>
+                <button>Contact</button>
+                <button>Portfolio</button>
             </ul>
         </nav>
 </header>
 
-<section class="heroImg">
+<!-- My Hero Section broken into pieces to make it work fancy like -->
+
+<!-- <section class="hero">
     <div class="content">
-        <img src="images/headshot.png">
-        <p> Hello, my name is Brian Skaj and I am a UX/UI designer based in Chicago, IL My goal is to bring people together through novel means to explore a rapidly expanding world and participate in our personal and societal growth. In other words, I love to...Learn, Relate, Strategize and Create.</p>
-        <button>Download Resume</button>
+        <img src="images/Headshot HW 18.png" class="heroPic">
+        <div class="statementBlock">
+            <p> Hello, my name is Brian Skaj and I am a UX/UI designer based in Chicago</p>
+            <p>My goal is to bring people together through novel means to explore a rapidly expanding world and participate in our personal and societal growth.</p>
+            <div class="motto"><h4>In other words, I love to...</h4><h3>Learn, Relate and Create.</h3></div>
+            <button>Download Resume</button>
+        </div>
+    </div>
+</section> -->
+
+<div><img class="heroImg" src="/images/Homepage Banner No Logo.png"></div>
+<button class="resume">Download Resume</button>
+<!--My UX Skills section coded using CSS flex-->
+<section class="mySkills">
+    <h1>My UX Skills</h1>
+    <div class="flexContainer">
+        <div>
+            <img src="images/Training Skills.png" class="skillsCenter">
+            <h3>Training</h3>
+            <p>Working alongside call center workers and office clerks I have regularly raised the bar for those around me improving CSAT ratings and reducing shipping errorsby more than a standard deviation
+                Supervising package handlers at UPS I trained more than 50 employees to maintain production rates while following a set of over 90 safety standards</p>
+        </div>
+        <div>
+            <img src="images/Teaching Skills.png" class="skillsCenter">
+            <h3>Teaching</h3>
+            <p>As an educator, facilitator, presenter and public speaker I have brought rooms of 25+ students from ages 12-18 to understand complex mathetical ideas.
+                I have tested and analyzed results of student learning then collaborated with dozens of colleagues to identify best practices for student learning to meet measurable goals derived from these analyses.</p>
+        </div>
+        <div>
+            <img src="images/Troubleshooting Skills.png" class="skillsCenter">
+            <h3>Troubleshooting</h3>
+            <p>As a supervisor at UPS I used and managed users of ergonomic and durable package sorting interfaces which needed to be kept in optimal performance status in fast-paced environments.
+                As a customer service representative I was often tasked with troubleshooting user issues surrounding the company’s website and proprietary phone app.</p>
+        </div>
     </div>
 </section>
 
-<footer>
-    <ul>
-        <li class="inline-block">About Me</li>
-        <li class="inline-block">Blog</li>
-        <li class="inline-block">Contact Me</li>
-        <li class="inline-block">Portfolio</li>
-    </ul>
+<!--My Work section coded using CSS grid-->
+<section class="myWork">
+    <h1>My Work</h1>
+
+    <div class="workGrid">
+        <div class="topLeft">
+            <h4>My Blog</h4>
+            <img src="images/Property 1=Blog.png" class="workCenter">
+            <p>As a creative conttent writer I have taken an interest in Artificial Intelligence and its development in the context of modern technological achievements. To that end, I keep a weekly blog on the subject.</p>
+            <button>Take a Look</button>
+        </div>
+        <div class="topRight">
+            <h4>Non-Profit Site Redesign</h4>
+            <img src="images/Property 1=IA.png" class="workCenter">
+            <p>Interfaith America is a Non-Profit organization created to promote more inclusive environments with consulting and public speaking. I worked with two partners to improve user access to the site.</p>
+            <button>Take a Look</button>
+        </div>
+        <div class="bottomLeft">
+            <h4>Business Marketplace Upgrade</h4>
+            <img src="images/Property 1=AWE Red.png" class="workCenter">
+            <p>A Wilder Experience is a company that provides guided experiences through back country in Newfoundland. I worked with two partners to aid cross traffic between the stakeholder’s home site and Shopify marketplace.</p>
+            <button>Take a Look</button>
+        </div>
+        <div class="bottomRight">
+            <h4>Mobile App Case Study</h4>
+            <img src="images/Property 1=ALICE.png" class="workCenter">
+            <p>ALICE is a travel planning app I developed as a one-person case study at the outset of UX/UI Bootcamp. It fosters exploration of travel ideas while tracking a budget and connecting users to a social community.</p>
+            <button>Take a Look</button>
+        </div>
+    </div>
+</section>
+
+<footer class="bottomNav">
+    <nav class="footer">
+        <ul>
+            <button>About Me</button>
+            <button>Blog</button>
+            <button>Contact</button>
+            <button>Portfolio</button>
+        </ul>
+    </nav>
 </footer>
     </body>
 </html>
